@@ -122,9 +122,7 @@ export default async function FilmPage({
 			</div>
 
 			<div className={style.filmDescription}>{item.description[locale]}</div>
-			<div>
-				<CardsGrid cards={similar} />
-			</div>
+			<CardsGrid cards={similar} />
 		</div>
 	)
 }

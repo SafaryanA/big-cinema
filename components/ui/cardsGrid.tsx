@@ -3,7 +3,7 @@ import CardItem from '../shared/cardItem'
 
 export default function CardsGrid({ cards }: { cards: CardView[] }) {
 	return (
-		<div className='container_body'>
+		<div className='similar-movies'>
 			<div className='grid-films-card-wrapper'>
 				<div className='grid-films-card'>
 					{cards.map(card => (
