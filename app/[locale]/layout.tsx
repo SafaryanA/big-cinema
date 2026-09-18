@@ -2,6 +2,7 @@ import type { ClientMessages } from '@/@type/translate'
 import MainFooter from '@/components/shared/mainFooter'
 import MobileMenu from '@/components/shared/mobileMenu'
 import Header from '@/components/shared/topHeader'
+import ThemeKeeper from '@/components/ui/themeKeeper'
 import { routing } from '@/i18n/routing'
 import type { Metadata, Viewport } from 'next'
 import { THEME_COOKIE } from '@/libs/theme'
@@ -92,6 +93,7 @@ export default async function RootLayout({
 				/>
 			</head>
 			<body className='min-h-full flex flex-col'>
+				<ThemeKeeper />
 				<NextIntlClientProvider messages={clientMessages}>
 					<Header />
 					<MobileMenu />
