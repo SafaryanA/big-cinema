@@ -1,0 +1,43 @@
+.posters {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 9 / 16;
+	overflow: hidden;
+	border-radius: 15px 15px 0 0;
+}
+
+.poster {
+	object-fit: cover;
+	opacity: 0;
+	&:first-child {
+		opacity: 1;
+	}
+}
+
+.posters:hover .poster {
+	animation: poster-cycle 2.4s infinite;
+}
+
+.posters:hover .poster:nth-child(2) {
+	animation-delay: 0.8s;
+}
+
+.posters:hover .poster:nth-child(3) {
+	animation-delay: 1.6s;
+}
+
+@keyframes poster-cycle {
+	0%,
+	33.33% {
+		opacity: 1;
+	}
+	33.34%,
+	100% {
+		opacity: 0;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.posters:hover .poster {
+		animation: none;
+	}
+}

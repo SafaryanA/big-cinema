@@ -1,0 +1,21 @@
+.blockSubscription {
+	margin-top: 40px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: start;
+	.cardSubscription {
+		border-radius: 15px;
+		background: var(--surface-2);
+		overflow: hidden;
+		flex: 0 1 400px;
+		padding: 20px 15px;
+		box-shadow: 25px -16px 30px rgba(216, 121, 224, 0.26);
+	}
+}
+@media screen and (max-width: 1023px) {
+	.blockSubscription {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Creepster';
+	src: url('@/public/fonts/Creepster-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: url('@/public/fonts/CharisSIL.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'DRIP SCREAM';
+	src: url('@/public/fonts/DripScream.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

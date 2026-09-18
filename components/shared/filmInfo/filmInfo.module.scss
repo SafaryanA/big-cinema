@@ -1,0 +1,36 @@
+.infoInner {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
+	align-items: center;
+	line-height: 43px;
+	border-bottom: 1px solid var(--border-soft);
+	div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.infoInner {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.infoInner {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.infoInner {
+		flex-wrap: wrap;
+		align-items: flex-start;
+		line-height: 1.6;
+		padding-block: 6px;
+		> * {
+			min-width: 0;
+			overflow-wrap: anywhere;
+		}
+	}
+}

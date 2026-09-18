@@ -1,0 +1,116 @@
+.CardItemWrapper {
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	border: 2px groove var(--border);
+	border-radius: 15px;
+	.imageInner {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		img {
+			border-radius: 15px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	span {
+		display: block;
+		font-family: 'DRIP SCREAM';
+		font-size: 20px;
+	}
+	.badge {
+		position: absolute;
+		z-index: 5;
+		left: -10px;
+		top: 8px;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 4px 10px 4px 20px;
+		border-radius: 0 999px 999px 0;
+		background-color: rgba(0, 0, 0, 0.72);
+		backdrop-filter: blur(2px);
+		color: var(--on-dark);
+	}
+	.badge span {
+		font-family: inherit;
+		font-size: 17px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		gap: 3px;
+	}
+	.badgeYear {
+		opacity: 0.85;
+	}
+	.badgeRating {
+		color: #ffd25e;
+		white-space: nowrap;
+	}
+
+	.marks {
+		position: absolute;
+		z-index: 5;
+		right: -10px;
+		top: 46px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 6px;
+		max-width: calc(100% - 16px);
+	}
+	.mark {
+		color: var(--on-dark);
+		font-family: inherit;
+		font-size: 19px;
+		line-height: 22px;
+		padding: 4px 19px 4px 9px;
+		border-radius: 999px 0 0 999px;
+		background-color: rgba(0, 0, 0, 0.72);
+		backdrop-filter: blur(2px);
+		max-width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	@media screen and (max-width: 420px) {
+		.mark {
+			padding: 4px 16px 4px 6px;
+		}
+	}
+	.markPaid {
+		background-color: #4b1590;
+		background-image: var(--accent);
+	}
+	.title {
+		padding-top: 15px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.startBlock {
+		height: calc(100vh - 48px);
+	}
+}
+@media screen and (max-width: 576px) {
+	.CardItemWrapper {
+		height: auto;
+		padding: 5px;
+
+		.topBlock {
+			width: 50px;
+			height: 100px;
+		}
+		span {
+			padding-inline: 5;
+			font-size: 15px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.filmRating {
+	flex-wrap: wrap;
+	align-items: center;
+	.ratingStar {
+		width: 30px;
+		height: 30px;
+	}
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+	.starEmpty use,
+	.starPartial use {
+		stroke: var(--star-empty-line);
+		stroke-width: 12;
+		paint-order: stroke;
+	}
+	span {
+		font-size: 22px;
+	}
+}
+
+.ratingBlock {
+	width: 100%;
+	max-width: 1550px;
+	margin: 0 auto;
+}
+
+.starButton {
+	display: block;
+	padding: 0;
+	background: none;
+	border: 0;
+	line-height: 0;
+	transition: transform 0.15s ease-in-out;
+}
+
+.starButton:hover,
+.starButton:focus-visible {
+	transform: scale(1.12);
+	outline: none;
+}
+
+.ratingNote {
+	margin-top: 6px;
+	font-size: 16px;
+	opacity: 0.8;
+}
+
+.ratingNote a {
+	text-decoration: underline;
+}

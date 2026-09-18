@@ -1,0 +1,237 @@
+.headerWrapper {
+	width: 100%;
+	background-color: var(--chrome);
+	color: var(--on-chrome);
+	border-bottom: 1px solid var(--chrome-border);
+
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.topHeader {
+	position: relative;
+	gap: 20px;
+	max-width: 1550px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 25px 15px 25px;
+
+	.logo {
+		font-family: 'Creepster';
+		font-size: 45px;
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.centreBlock {
+		width: 100%;
+		flex: 1;
+		height: 54px;
+	}
+	.login {
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		column-gap: 5px;
+		align-items: center;
+		z-index: 0;
+		font-family: 'DRIP SCREAM';
+		font-size: 23px;
+		padding: 10px 50px;
+		border-radius: 10px;
+		display: flex;
+		.loginText {
+			display: inline-block;
+		}
+		span.loginImgInner {
+			width: 30px;
+			height: 30px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			inset: 0;
+			border-radius: inherit;
+			background-image: var(--accent);
+			opacity: 0;
+			transition: var(--ta);
+		}
+		&:hover,
+		&:focus-visible {
+			color: #fff;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	.loginActive {
+		color: #fff;
+		&::before {
+			opacity: 1;
+		}
+	}
+	.search {
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 10px 5px;
+		border-radius: 10px;
+		width: 54px;
+		height: 54px;
+		position: relative;
+		&-icon {
+			width: 100%;
+			height: 100%;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			border-radius: inherit;
+			background-image: var(--accent);
+			opacity: 0;
+			transition: var(--ta);
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	.searchForm {
+		flex: 0 1 500px;
+		min-width: 200px;
+		height: 54px;
+		background-color: transparent;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 3px;
+		position: relative;
+		z-index: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			inset: 0;
+			border-radius: inherit;
+			background-image: var(--accent);
+			opacity: 0;
+			transition: var(--ta);
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+		input {
+			border-radius: 10px;
+			background-color: #fff;
+			color: #000;
+			width: 100%;
+			height: 100%;
+			padding: 0 10px;
+			&::placeholder {
+				color: #555;
+			}
+		}
+	}
+}
+
+.searchInput:active,
+.searchInput:hover,
+:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+@media screen and (max-width: 1280px) {
+	.topHeader {
+		.login {
+			font-size: 20px;
+			padding: 10px 15px;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.topHeader {
+		padding: 0 15px 15px;
+		gap: 0;
+	}
+	.searchForm {
+		flex: 0 1 500px;
+	}
+}
+
+.headerActions {
+	:global(.user-dropdown) {
+		height: 40px;
+	}
+	:global(.user-dropdown) > :global(.dropdown-root) > button {
+		position: relative;
+		z-index: 0;
+		width: 40px;
+		height: 40px;
+		padding: 5px;
+		border-radius: 8px;
+		justify-content: center;
+		align-items: center;
+	}
+	:global(.user-dropdown) > :global(.dropdown-root) > button::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+		border-radius: inherit;
+		background-color: #4b1590;
+		background-image: var(--accent);
+		opacity: 0;
+		transition: var(--ta);
+	}
+	:global(.user-dropdown) > :global(.dropdown-root) > button:hover::before,
+	:global(.user-dropdown)
+		> :global(.dropdown-root)
+		> button:focus-visible::before {
+		opacity: 1;
+	}
+	:global(.user-dropdown) > :global(.dropdown-root) > button:hover,
+	:global(.user-dropdown) > :global(.dropdown-root) > button:focus-visible {
+		--icon-invert: 0;
+	}
+	:global(.user-dropdown)
+		> :global(.dropdown-root)
+		> button
+		:global(.img-wrapper) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 0;
+	}
+	:global(.user-dropdown) > :global(.dropdown-root) > button img {
+		width: 20px;
+		height: auto;
+	}
+
+	:global(.user-dropdown) > :global(.dropdown-root),
+	:global(.btn-lang) > :global(.dropdown-root) {
+		position: static;
+	}
+	:global(.user-dropdown) :global(.dropdown-items),
+	:global(.btn-lang) :global(.dropdown-items) {
+		top: 100%;
+		right: 0;
+		bottom: auto;
+		left: auto;
+		margin-top: 1px;
+		width: max-content;
+		transform: scale(0) !important;
+		transform-origin: top right;
+	}
+	:global(.user-dropdown) :global(.dropdown-items.dropdown-items-active),
+	:global(.btn-lang) :global(.dropdown-items.dropdown-items-active) {
+		transform: scale(1) !important;
+	}
+}

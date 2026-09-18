@@ -1,0 +1,76 @@
+.itemSubscription {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.cardTitle {
+		font: 30px var(--ff);
+	}
+	.price {
+		font: 25px var(--ff);
+	}
+
+	.includePlat {
+		margin-block: 15px;
+		padding-block: 15px;
+		border-top: 2px solid var(--foreground);
+		border-bottom: 2px solid var(--foreground);
+		text-align: center;
+		font-size: 18px;
+	}
+	.innerOffers {
+		width: 100%;
+		scale: none;
+		.rowOffer {
+			position: relative;
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: start;
+			column-gap: 10px;
+		}
+		.offerText {
+			max-width: 400px;
+			overflow: hidden;
+			text-wrap: nowrap;
+		}
+	}
+	.question {
+		display: inline-block;
+		margin-left: 5px;
+		min-width: 20px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		span {
+			font-size: 14px;
+			text-overflow: ellipsis;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 18px;
+		}
+	}
+	.explanation {
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		background-color: #4b1590;
+		background-image: var(--accent);
+		padding: 10px;
+		text-align: center;
+
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0.9);
+		transition:
+			opacity 0.2s ease,
+			transform 0.2s ease,
+			visibility 0.2s;
+		pointer-events: none;
+	}
+	.question:hover ~ .explanation {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,52 @@
+.mainMenuItems {
+	display: flex;
+}
+
+.mainMenuLink {
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	font-family: 'DRIP SCREAM';
+	font-size: 20px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+		border-radius: inherit;
+		background-color: #4b1590;
+		background-image: var(--accent);
+		opacity: 0;
+		transition: var(--ta);
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+	&:hover,
+	&:focus-visible {
+		color: #fff;
+	}
+}
+
+.mainMenuLinkActive {
+	color: #fff;
+	&::before {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.topHeader {
+		.mainMenuLink {
+			font-size: 20px;
+			padding: 10px 15px;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.mainMenu {
+		display: none;
+	}
+}

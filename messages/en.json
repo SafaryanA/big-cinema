@@ -1,0 +1,336 @@
+{
+	"MainMenu": {
+		"Movies": "Movies",
+		"Series": "Series",
+		"Cartoons": "Cartoons",
+		"Login": "Login",
+		"Logout": "Logout",
+		"Search": "Search",
+		"Profile": "Profile",
+		"Menu": "Menu",
+		"Language": "Language",
+		"Back": "Back",
+		"SearchEmpty": "Nothing found",
+		"toLight": "Switch to light theme",
+		"toDark": "Switch to dark theme",
+		"theme": "Theme",
+		"SearchTitle": "Search: {query}",
+		"SearchShort": "Type at least 2 characters",
+		"Settings": "Settings",
+		"Theme": "Theme"
+	},
+	"HomePage": {
+		"HomePageTitle": "Home page",
+		"Subscription": "Buy a subscription"
+	},
+	"Catalog": {
+		"showMore": "Show more",
+		"loading": "Loading…",
+		"end": "That's all the films"
+	},
+	"Card": {
+		"series": "Series",
+		"film": "Film",
+		"subscription": "By subscription",
+		"ratingOf": "Rating {value} out of 10"
+	},
+	"MainFooter": {
+		"Contact": "Contact",
+		"Phone": "Tel",
+		"E-mail": "E-mail.",
+		"Registration": "Registration",
+		"WarningFirstPart": "Film copying warning: Films bearing this symbol",
+		"WarningLastPart": "are copyrighted by << REELO >>."
+	},
+	"FilmPage": {
+		"sliderTitle": "New",
+		"picture": "Picture",
+		"year": "Year",
+		"genres": "Genres",
+		"duration": "Duration (min)",
+		"subject": "Subject",
+		"status": "Status",
+		"translation": "Translation",
+		"studio": "Studio",
+		"country": "Country",
+		"director": "Director",
+		"actors": "Actors",
+		"season": "Season",
+		"series": "Series",
+		"trailer": "Trailer",
+		"noTrailer": "Movie",
+		"day": "Today",
+		"days": "Days",
+		"pageTitle": "Similar",
+		"soon": "Soon",
+		"noDate": "Date unknown",
+		"rate": "Rate {value} out of 10",
+		"commonRating": "Overall rating {value}",
+		"rateInvite": "Click a star to leave your rating",
+		"rateSignIn": "Log in to leave a rating"
+	},
+	"FilmData": {
+		"status": {
+			"airing": "Airing"
+		},
+		"type": {
+			"series": "Series",
+			"film": "Film"
+		}
+	},
+	"LoginBox": {
+		"authorization": "Log In",
+		"registration": "Registration",
+		"profile": "Profile",
+		"close": "Close",
+		"login": "Login",
+		"password": "Password",
+		"confirmPassword": "Confirm password",
+		"email": "e-mail",
+		"forgotPassword": "Forgot password ?",
+		"elsesComputer": "Someone else's computer",
+		"loginSite": "Login to the site",
+		"save": "Save",
+		"change": "Change",
+		"name": "Name",
+		"PrivacyPolicy": "Privacy Policy",
+		"UserAgreement": "User Agreement",
+		"and": "and",
+		"errorEmpty": "Fill in all the fields",
+		"errorCheckFields": "Check the highlighted fields",
+		"errorRequired": "Required field",
+		"errorLoginShort": "At least 3 characters",
+		"errorPasswordShort": "At least 10 characters",
+		"errorNameShort": "At least 2 characters",
+		"errorPasswordUpper": "Add a capital letter",
+		"errorPasswordLower": "Add a lowercase letter",
+		"errorPasswordDigit": "Add a digit",
+		"errorPasswordSymbol": "Add a symbol, for example @ $ % ! ? #",
+		"errorEmailFormat": "Enter a valid e-mail",
+		"errorPasswordMismatch": "Passwords do not match",
+		"errorTerms": "Please accept the terms",
+		"errorNoBackend": "The server is not connected yet",
+		"sending": "Sending…",
+		"send": "Send",
+		"passwordRecovery": "Password recovery"
+	},
+	"language": {
+		"en": "English",
+		"ru": "Russian",
+		"hy": "Armenian"
+	},
+	"NotFound": {
+		"mainText": "Page not found, please go to the main page by clicking on the button Main Page",
+		"buttonRedirect": "Main page"
+	},
+	"ErrorPage": {
+		"title": "Something went wrong",
+		"text": "The page failed to load. Try again — or go back to the home page.",
+		"retry": "Try again",
+		"home": "Home page",
+		"loading": "Loading…"
+	},
+	"Error": {
+		"registration": "Register to watch this movie.",
+		"registrationBtn": "Register",
+		"subscription": "This movie can only be watched with a subscription.",
+		"subscribeBtn": "Subscribe",
+		"released": "The film will be released"
+	},
+	"Legal": {
+		"UserAgreement": {
+			"title": "Terms of Use",
+			"updated": "Updated 18 September 2026",
+			"notice": "Reelo is a learning project. It has no real server: sign-up, sign-in and payment do not actually work, and the videos and images are pulled from third-party services. This text describes how the application is built and is not a public offer.",
+			"sections": [
+				{
+					"heading": "1. About the service",
+					"text": [
+						"Reelo is a showcase site for an online cinema: a catalogue of films and series, a film page with season and episode pickers, search, three interface languages and two colour themes.",
+						"The catalogue is filled with fictional films. Titles, descriptions, posters and ratings were invented to demonstrate how the site works and do not refer to any existing works."
+					]
+				},
+				{
+					"heading": "2. Accounts",
+					"text": [
+						"The sign-in, sign-up and password recovery forms are rendered and validate what you type, but they create no records: the project has no server that could store one.",
+						"The signed-in flag lives in a browser cookie and is cleared by the “Log out” button. No names, e-mail addresses or passwords are sent anywhere or stored anywhere."
+					]
+				},
+				{
+					"heading": "3. Subscription",
+					"text": [
+						"The Start, Pro and Family plans are shown as an example. Payment is not wired up, no money is charged and no invoices are issued.",
+						"Some films are marked “By subscription”. That is a flag in the data, not a restriction on paid content."
+					]
+				},
+				{
+					"heading": "4. Video and images",
+					"text": [
+						"Almost all video on the site consists of embedded YouTube clips used as placeholders. Their rights belong to their owners; Reelo neither stores nor distributes them.",
+						"Episode stills are loaded from the Lorem Picsum service and serve the same purpose: to show what a schedule with images looks like.",
+						"The trailer is available to any visitor. The full video opens only for a signed-in person, and its address never reaches the page markup for those who may not watch it."
+					]
+				},
+				{
+					"heading": "5. Using the site",
+					"text": [
+						"You are free to use the site. Please do not try to bypass video access rules, load the service with automated requests, or pass it off as your own.",
+						"The project source is open and may be studied and reused for learning purposes."
+					]
+				},
+				{
+					"heading": "6. Liability",
+					"text": [
+						"The site is provided as is. The author promises no uninterrupted service: the third-party services that supply the videos and images may stop responding at any moment.",
+						"The author is not responsible for the content of third-party clips or for the consequences of following external links."
+					]
+				},
+				{
+					"heading": "7. Changes",
+					"text": [
+						"These terms may change along with the project. The date of the last change is shown at the top of the page."
+					]
+				},
+				{
+					"heading": "8. Contact",
+					"text": [
+						"Questions about the site go to the address shown in the footer."
+					]
+				}
+			]
+		},
+		"PrivacyPolicy": {
+			"title": "Privacy Policy",
+			"updated": "Updated 18 September 2026",
+			"notice": "In short: Reelo has no server to send anything to. Everything the site remembers about you sits in your own browser and disappears together with the site data.",
+			"sections": [
+				{
+					"heading": "1. What the site keeps in your browser",
+					"text": [
+						"Cookies. Two of them: one remembers the chosen theme, light or dark; the other remembers that you signed out. Both last a year and hold nothing beyond those flags.",
+						"Local storage. Two things live here: which episode and minute you stopped at for each film, and the rating you gave a film. At most fifty films are remembered; older entries are pushed out.",
+						"This data never leaves your computer: there is nowhere to send it."
+					]
+				},
+				{
+					"heading": "2. What the site does not collect",
+					"text": [
+						"No name, e-mail, phone number or payment details — even if you typed them into a form: the form validates them and passes them nowhere.",
+						"There are no analytics counters, advertising pixels or tracking systems. No behavioural profile is built."
+					]
+				},
+				{
+					"heading": "3. Third-party services",
+					"text": [
+						"Video is embedded from YouTube in its no-cookie mode — youtube-nocookie.com. Until you start a clip, YouTube sets no advertising cookies, but the very act of loading the player means it can see your IP address and browser details. Google's privacy policy applies to that.",
+						"Episode stills are loaded from picsum.photos. That service likewise sees the IP address the image was requested from.",
+						"Fonts, icons and all other images are served by the site itself and reach out to no one."
+					]
+				},
+				{
+					"heading": "4. How long it is kept and how to erase it",
+					"text": [
+						"Cookies expire automatically after a year, or sooner if you clear the site data in your browser settings.",
+						"Watch marks and ratings are kept until you erase them. Clearing the site data in your browser removes them completely and at once.",
+						"No copies remain with us: there is nowhere to copy them to."
+					]
+				},
+				{
+					"heading": "5. Children",
+					"text": [
+						"The site is not intended for children under thirteen and does not knowingly collect data from anyone, including them."
+					]
+				},
+				{
+					"heading": "6. What changes once there is a server",
+					"text": [
+						"The project is written so that real accounts, payment and cross-device sync can appear later. At that point some of the data listed above will start being stored on a server, and this text will be rewritten before that happens.",
+						"Until then, everything said above is literally true."
+					]
+				},
+				{
+					"heading": "7. Contact",
+					"text": [
+						"Questions about data go to the address shown in the site footer."
+					]
+				}
+			]
+		}
+	},
+	"Subscription": {
+		"TitlePage": "Subscription",
+		"Old": {
+			"title": "Old",
+			"text": "Dive into a rich, carefully curated library of classic films released more than a decade ago. From timeless masterpieces to hidden gems waiting to be rediscovered, this collection celebrates the golden eras of cinema and unforgettable storytelling. Perfect for viewers who appreciate nostalgia, legendary performances, and the artistry of filmmaking history — all available anytime, included in your Start plan at no extra cost."
+		},
+		"Educational": {
+			"title": "Educational",
+			"text": "Explore a constantly growing collection of educational content designed to inform, inspire, and broaden your perspective. From in-depth documentaries covering science, history, and culture to practical instructional videos on countless topics, there's always something new to discover. Perfect for curious minds who want quality content that entertains while adding genuine value and knowledge to everyday life, fully included in your subscription."
+		},
+		"Trailers": {
+			"title": "Trailers",
+			"text": "Stay ahead of the curve with instant access to the latest movie trailers, straight from the world of cinema. Preview upcoming blockbusters, indie releases, and hidden gems before they officially hit theaters or streaming platforms. Build your personal watch list, discover new favorites early, and never miss out on the excitement surrounding the next big premiere — all included in your Start plan."
+		},
+		"New": {
+			"title": "New",
+			"text": "Get instant, unrestricted access to the newest film releases the very moment they arrive on the platform. No waiting periods, no delays, no exceptions — enjoy premium fresh content as soon as it's published. Pro subscribers are always first in line to experience the latest stories, performances, and cinematic releases as they happen, keeping your library constantly up to date and exciting."
+		},
+		"Notifications": {
+			"title": "Notifications",
+			"text": "Never miss a moment with real-time notifications tailored to your interests. Get instantly alerted whenever new titles, updates, or exclusive content are added to the platform, so you're always the first to know what's fresh and ready to watch. Stay effortlessly connected to everything new, without having to search — convenience and discovery combined in one simple, smart Pro feature."
+		},
+		"NoAds": {
+			"title": "no ads",
+			"text": "Watch everything completely uninterrupted with a full, ad-free viewing experience across all devices. No pre-roll advertisements, no mid-video breaks, no distractions — just smooth, continuous streaming from beginning to end. Designed for Pro subscribers who value their time, this feature ensures every viewing session stays focused entirely on the content that matters most to you."
+		},
+		"Multiple": {
+			"title": "multiple",
+			"text": "Share your subscription seamlessly across the whole family with support for multiple connected devices. Stream simultaneously on phones, tablets, TVs, and more — everyone gets to enjoy their favorite films and shows at the same time, on their own screen, without interruptions or compromises. Designed for households who want flexibility, convenience, and entertainment for every family member at once."
+		},
+		"Devices": {
+			"title": "devices",
+			"text": "Enjoy a perfectly synced viewing experience across every device you own. Whether you're watching on a large TV screen, a tablet, or your phone, expect consistent visual quality, smooth playback, and seamless transitions wherever and however you choose to watch. Designed to deliver a reliable, premium experience regardless of screen size or platform, every single time you press play."
+		}
+	},
+	"SubscriptionCard": {
+		"buttonBuy": "BUY",
+		"Start": {
+			"alt": "Start",
+			"currency": "Free",
+			"includePlat": "For more features, you need to take a paid subscription.",
+			"listOffers": [
+				"Films that are more than 10 years old",
+				"Educational videos or films",
+				"Trailers"
+			]
+		},
+		"Pro": {
+			"alt": "Pro",
+			"currency": "$",
+			"includePlat": "All the features of the Start tariff are available",
+			"listOffers": [
+				"All new films",
+				"Receiving notifications about examples",
+				"No ads"
+			]
+		},
+		"Family": {
+			"alt": "Family",
+			"currency": "$",
+			"includePlat": "All the features of the Pro tariff are available",
+			"listOffers": [
+				"Connecting multiple devices",
+				"General display on all devices"
+			]
+		}
+	},
+	"PopUp": {
+		"genre": "Genre",
+		"studio": "Studio",
+		"year": "Year",
+		"country": "Country",
+		"chooseYear": "Any year",
+		"chooseCountry": "Any country"
+	}
+}
